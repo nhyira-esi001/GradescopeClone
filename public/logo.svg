@@ -1,0 +1,7 @@
+<svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22.5 8L35 30H10L22.5 8Z" fill="#00A3A3"/>
+  <path d="M50 20C50 13.4 55.4 8 62 8H88C94.6 8 100 13.4 100 20C100 26.6 94.6 32 88 32H62C55.4 32 50 26.6 50 20Z" fill="#00A3A3"/>
+  <path d="M110 20C110 13.4 115.4 8 122 8H138C144.6 8 150 13.4 150 20C150 26.6 144.6 32 138 32H122C115.4 32 110 26.6 110 20Z" fill="#00A3A3"/>
+  <text x="55" y="24" font-family="Arial" font-size="16" font-weight="bold" fill="white">Gradescope</text>
+</svg>
+
