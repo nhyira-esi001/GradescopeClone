@@ -1,21 +1,20 @@
-import "./Partners.css"
-
 const Partners = () => {
   const partners = [
-    { id: 1, name: "Princeton", logo: "/partners/princeton.svg" },
-    { id: 2, name: "Harvard", logo: "/partners/harvard.svg" },
-    { id: 3, name: "Washington", logo: "/partners/washington.svg" },
-    { id: 4, name: "MIT", logo: "/partners/mit.svg" },
-    { id: 5, name: "Stanford", logo: "/partners/stanford.svg" },
+    { name: "Harvard", logo: "/placeholder.svg?height=40&width=40" },
+    { name: "MIT", logo: "/placeholder.svg?height=40&width=40" },
+    { name: "Stanford", logo: "/placeholder.svg?height=40&width=40" },
+    { name: "Washington", logo: "/placeholder.svg?height=40&width=40" },
+    { name: "Berkeley", logo: "/placeholder.svg?height=40&width=40" },
   ]
 
   return (
-    <section className="partners">
-      <div className="container">
-        <div className="partners-grid">
-          {partners.map((partner) => (
-            <div key={partner.id} className="partner-item">
-              <img src={partner.logo || "/placeholder.svg"} alt={partner.name} />
+    <section className="py-10 bg-white">
+      <div className="container mx-auto px-4">
+        <h2 className="text-center text-gray-500 text-sm font-medium mb-8">Partners</h2>
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          {partners.map((partner, index) => (
+            <div key={index} className="grayscale hover:grayscale-0 transition-all">
+              <img src={partner.logo || "/placeholder.svg"} alt={`${partner.name} logo`} className="h-10 w-auto" />
             </div>
           ))}
         </div>
