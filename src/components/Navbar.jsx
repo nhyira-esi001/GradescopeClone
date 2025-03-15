@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import RubixLogo from "../assets/images/rubrix-logo.png";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -33,15 +34,15 @@ const Navbar = () => {
           <a href="#" className="text-gray-600 hover:text-teal-500 text-sm font-medium">
             Help Center
           </a>
-          <a href="#" className="text-gray-600 hover:text-teal-500 text-sm font-medium">
+          <Link to="/login" className="text-gray-600 hover:text-teal-500 text-sm font-medium">
             Log In
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/signup"
             className="bg-teal-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-teal-600 transition-colors"
           >
             Sign Up
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Navigation */}
